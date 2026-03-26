@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snowpark-batch"
+version = "0.1.0"
+description = "Custom fuzzy batching for Snowpark DataFrames — normalizes names, groups similar entries, and assigns dynamic batches."
+requires-python = ">=3.10"
+dependencies = [
+    "snowflake-snowpark-python>=1.11.0,<2.0.0",
+    "unidecode>=1.3.0,<2.0.0",
+    "jellyfish>=1.0.0,<2.0.0",
+    "pandas>=1.5.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

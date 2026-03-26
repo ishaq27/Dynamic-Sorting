@@ -1,0 +1,16 @@
+pyproject.toml
+src/snowpark_batch/__init__.py
+src/snowpark_batch/api.py
+src/snowpark_batch/batching.py
+src/snowpark_batch/constants.py
+src/snowpark_batch/normalize.py
+src/snowpark_batch/phonetic.py
+src/snowpark_batch.egg-info/PKG-INFO
+src/snowpark_batch.egg-info/SOURCES.txt
+src/snowpark_batch.egg-info/dependency_links.txt
+src/snowpark_batch.egg-info/requires.txt
+src/snowpark_batch.egg-info/top_level.txt
+tests/test_api_integration.py
+tests/test_batching.py
+tests/test_normalize.py
+tests/test_phonetic.py
